@@ -1,0 +1,18 @@
+<h1>Employee Show Page</h1>
+
+<img src="<%= @employee.img_url %>" width="500" height=auto>
+<br>
+<br>
+Full Name: <%= @employee.full_name %>
+  <br>
+  <br>
+AKA: <%= @employee.alias %>
+  <br>
+  <br>
+Job Title: <%= @employee.title %>
+  <br>
+  <br>
+Branch: <%= @employee.office %>
+  <br>
+  <br>
+  <%= link_to "Edit Employee", edit_employee_path %>
