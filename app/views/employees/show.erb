@@ -1,0 +1,13 @@
+<h1>Employee Profile</h1>
+
+<div>
+    <ul>
+        <li>First Name : <%= @employee.first_name %> <br></li>
+        <li>Last Name : <%= @employee.last_name %> <br></li>
+        <li>Alias : <%= @employee.alias %> <br></li>
+        <li>Title: <%= @employee.title %> <br></li>
+        <li>Office: <%= @employee.office %> <br></li>
+        Image <br>
+        <%= image_tag @employee.img_url %> <br>
+    </ul>
+</div>
