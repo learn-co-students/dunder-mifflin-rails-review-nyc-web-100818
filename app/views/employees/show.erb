@@ -1,0 +1,13 @@
+<h2><%= "#{@employee.first_name} #{@employee.last_name}" %></h2>
+<%=image_tag(@employee.img_url, class: "img") if @employee.img_url%>
+<ul>
+  <li>Alias? <%=@employee.alias%></li>
+  <li>Job Title: <%=@employee.title%></li>
+  <li>Office: <%=@employee.office%></li>
+</ul>
+
+<h4><%= link_to @dog.name, dog_path(@dog)%> is a <%= @dog.breed %> and is <%= @dog.age %> </h4>
+
+<p> What a good doggy! <p>
+
+<%= link_to "Edit Me", edit_employee_path(@employee) %>
