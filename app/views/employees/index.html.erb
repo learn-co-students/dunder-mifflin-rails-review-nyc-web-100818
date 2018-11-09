@@ -1,0 +1,7 @@
+<h1>All the Employees at Dunder Mifflin</h1>
+
+<% @employees.each do |emp| %>
+<label>First Name:</label>
+<%= link_to emp.first_name, emp %>
+<br>
+<% end %>

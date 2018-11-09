@@ -1,0 +1,42 @@
+<h1>DM EMPLOYEE INFO</h1>
+
+<label>First Name:</label>
+<%= @employee.first_name %>
+<br>
+<br>
+<br>
+<label>Last Name:</label>
+<%= @employee.last_name %>
+<br>
+<br>
+<br>
+<label>Alias:</label>
+<%= @employee.alias %>
+<br>
+<br>
+<br>
+<label>Title:</label>
+<%= @employee.title %>
+<br>
+<br>
+<br>
+<label>Office:</label>
+<%= @employee.office %>
+<br>
+<br>
+<br>
+<label>Image:</label>
+<%= image_tag @employee.img_url %>
+<br>
+<br>
+<br>
+<label>Dogs Owner:</label>
+<%= link_to @employee.dog.name, dog_path(@employee.dog.id) %>
+<br>
+<br>
+<br>
+<%= link_to "Edit", edit_employee_path(@employee) %>
+<br>
+<br>
+<br>
+<%= link_to "Back", employees_path %>
