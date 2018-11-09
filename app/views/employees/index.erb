@@ -1,0 +1,11 @@
+<h1>All Employees</h1>
+
+
+
+<% @employees.each do |employee| %>
+<li>Name: <%= link_to "#{employee.first_name} #{employee.last_name}", employee_path(employee) %></li>
+<p><%= image_tag employee.img_url %></p>
+<%= button_to "Edit Employee", edit_employee_path(employee), method: :get %>
+************************************************************************************************
+
+<% end %>
