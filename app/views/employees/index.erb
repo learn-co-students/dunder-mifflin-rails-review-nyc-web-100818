@@ -1,0 +1,8 @@
+<h1>All da employees</h1>
+
+<% @employees.each_with_index do |e, idx| %>
+  <%= "#{idx+1}. " %><%= link_to e.first_name, e %>  <%= e.last_name %> <br><br>
+<% end %>
+
+
+<%= link_to "Create a new employee!", new_employee_path  %>

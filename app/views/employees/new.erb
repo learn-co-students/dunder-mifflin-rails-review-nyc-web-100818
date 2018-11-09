@@ -1,0 +1,9 @@
+<h1>new employee</h1>
+
+<% if flash[:errors] %>
+  <% flash[:errors].each do |e| %>
+  <li> <%= e %> </li>
+  <% end %>
+<% end %>
+
+<%= render 'form' %>
